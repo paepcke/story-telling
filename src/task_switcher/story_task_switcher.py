@@ -3,7 +3,7 @@
 # @Author: Gemini
 # @Date:   2026-01-30 14:44:48
 # @Last Modified by:   Andreas Paepcke
-# @Last Modified time: 2026-01-31 12:38:14
+# @Last Modified time: 2026-01-31 12:50:09
 
 from flask import Flask, render_template_string, jsonify
 import subprocess
@@ -24,8 +24,7 @@ class AIServiceController:
 <head>
     <title>AI Control Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="/favicon-16x16.ico" sizes="16x16">
-    <link rel="icon" type="image/x-icon" href="/favicon-32x32.ico" sizes="32x32">    
+    <link rel="icon" type="image/x-icon" href="/static/favicon-32x32.ico" sizes="32x32">    
     <style>
         body { font-family: sans-serif; text-align: center; padding: 50px; background: #121212; color: white; }
         .control-group { display: flex; align-items: center; justify-content: center; margin: 20px auto; width: 350px; }
