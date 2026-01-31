@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "story-telling"
+version = "0.0.1"
+authors = [
+    {name = "Andreas Paepcke", email = "paepcke@cs.stanford.edu"}
+]
+description = "Support for AI supported story telling"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+     "Flask>=3.1.2",
+     "waitress>=3.0.2",
+]
+
+[project.urls]
+Repository = "https://github.com/paepcke/story-telling.git"
+
+[project.optional-dependencies]
+test = [
+    "nose2>=0.9.2",
+]
+#dev = [
+#    "pydeps>=3.0.1",
+#    "graphviz>=0.21",
+#]
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
